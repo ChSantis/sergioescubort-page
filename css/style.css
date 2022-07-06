@@ -28,7 +28,7 @@ img{
 }
 
 section[id]{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 99px;
 }
 
 /* Tipografia */
@@ -82,15 +82,15 @@ h3{
     margin: auto;
 }
 
-.logo-S{ 
+/* .logo-S{ 
     display: none;
     align-items: center;
-}
+} */
 
-.logo-S img{
+/* .logo-S img{
     display: block;
     margin: auto;
-}
+} */
 
 .menu a{
     color: var(--blanco);
@@ -110,11 +110,11 @@ h3{
     transition: 0.4s;
 }
 
-.mostrar-menu{
+/* .mostrar-menu{
     position: absolute;
     top: 4rem;
     right: 4rem;
-}
+} */
 
 .menu a:hover,
 .mostrar-menu:hover,
@@ -156,6 +156,7 @@ h3{
         padding: 0;
         z-index: 100;
         transition: 0.8s;
+        top: 100px;
         
     }
 
@@ -165,14 +166,13 @@ h3{
         padding: 1rem;
     }
 
-    .logo-L{
+    /* .logo-L{
         display: none;
-    }
+    } */
     
-    .logo-S{ 
+    /* .logo-S{ 
         display:block;
-        /* position: inherit; */
-    }
+    } */
 
     /* .esconder-menu{
         display: block;
@@ -387,10 +387,10 @@ h3{
 .personal{
     width:100%;
     height: 100%;
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+
 }
 
 @media (max-width: 768px) {
@@ -400,7 +400,11 @@ h3{
 }
 
 .personal img{
-    width: 50%;
+    /* width: 50%; */
+    /* height: auto; */
+    display: block;
+    margin: auto;
+    padding: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -419,6 +423,19 @@ h3{
     font-size: 1.6rem;
 
 }
+
+.biografia a{
+    color: var(--primario);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.biografia a:hover{
+    font-size: 1.8rem;
+}
+
+
 
 /* Servicios */
 .contenedor-servicios{
@@ -665,12 +682,10 @@ h3{
 
 @media (max-width: 768px) {
     .contenido_horarios{
-        /* display: block; */
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 }
 
@@ -680,12 +695,11 @@ h3{
     flex-direction: column;
     justify-content: center;
     margin: auto;
-
 }
 
 .calendario{
     margin: 0;
-    padding:0;
+    padding: 2rem 0;
     list-style: none;
     text-align: center;
 }
@@ -693,6 +707,13 @@ h3{
 .calendario li{
     font-size: 2rem;
     padding: .8rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .calendario li{
+        font-size: 1.6rem;
+        padding: 0;
+    }
 }
 
 .calendario span{
@@ -828,6 +849,23 @@ h3{
     .promo-reserva{
         display: block;
     }
+}
+
+.wsp{
+    position: fixed;
+    /* z-index: 1; */
+    bottom: 0;
+    left: 2px;
+}
+
+.wsp img{
+    height: 60px;
+    border-radius: 25%;
+    transition: .3s;
+}
+
+.wsp img:hover {
+    height: 64px;
 }
 
 
