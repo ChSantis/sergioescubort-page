@@ -271,6 +271,7 @@ h3{
     font-size: 1.8rem;
     margin: .8rem;
     transition: 0.5s;
+    border: none;
 }
 
 .boton-prima{
