@@ -10,7 +10,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Krub', sans-serif;
+
 }
 
 *, *:before, *:after {
@@ -21,6 +21,10 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Krub', sans-serif !important; 
 }
 
 img{
@@ -82,15 +86,6 @@ h3{
     margin: auto;
 }
 
-/* .logo-S{ 
-    display: none;
-    align-items: center;
-} */
-
-/* .logo-S img{
-    display: block;
-    margin: auto;
-} */
 
 .menu a{
     color: var(--blanco);
@@ -101,20 +96,6 @@ h3{
     margin-right: 2rem;
     font-size: 1.6rem;
 }
-
-.mostrar-menu,
-.esconder-menu{
-    font-size: 3rem;
-    cursor: pointer;
-    display: none;
-    transition: 0.4s;
-}
-
-/* .mostrar-menu{
-    position: absolute;
-    top: 4rem;
-    right: 4rem;
-} */
 
 .menu a:hover,
 .mostrar-menu:hover,
@@ -144,8 +125,6 @@ h3{
         display: block;
     }
 
-
-
     .menu{
         position: fixed;
         width: 100%;
@@ -160,34 +139,10 @@ h3{
         
     }
 
-
     .menu a{
         display: block;
         padding: 1rem;
     }
-
-    /* .logo-L{
-        display: none;
-    } */
-    
-    /* .logo-S{ 
-        display:block;
-    } */
-
-    /* .esconder-menu{
-        display: block;
-    } */
-
-    /* .esconder-menu{
-        position: absolute;
-        top: 4rem;
-        right: 4rem;
-    } */
-
-    /* #check:checked ~ .menu{
-        left: 0;
-    } */
-
 
 }
 
