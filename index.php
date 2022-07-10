@@ -39,7 +39,7 @@
                     <p class="referencial">Valor Referencial: $40.000</p>
                     <div class="botones">
                         <a href="#reserva" class="boton boton-prima">Reservas</a>
-                        <a href="/promociones.html" class="boton boton-secu">Más info</a>
+                        <a href="/promociones.php" class="boton boton-secu">Más info</a>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@
                     <p class="referencial">Valor Referencial: $75.000</p>
                     <div class="botones">
                         <a href="#reserva" class="boton boton-prima">Reservas</a>
-                        <a href="/promociones.html" class="boton boton-secu">Más info</a>
+                        <a href="/promociones.php" class="boton boton-secu">Más info</a>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                     <p class="referencial">Valor Referencial: $110.000</p>
                     <div class="botones">
                         <a href="#reserva" class="boton boton-prima">Reservas</a>
-                        <a href="/promociones.html" class="boton boton-secu">Más info</a>
+                        <a href="/promociones.php" class="boton boton-secu">Más info</a>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@
                     <p class="referencial">Valor Referencial: $175.000</p>
                     <div class="botones">
                         <a href="#reserva" class="boton boton-prima">Reservas</a>
-                        <a href="/promociones.html" class="boton boton-secu">Más info</a>
+                        <a href="/promociones.php" class="boton boton-secu">Más info</a>
                     </div>
                 </div>
 
@@ -206,6 +206,9 @@
                         </div>
                     </fieldset>
                 </form>
+                <?php
+                include("correo.php");
+                ?>
             </div>
             <ul class="lista-reserva">
                 <li class="reserva">
