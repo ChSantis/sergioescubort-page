@@ -357,6 +357,7 @@ h3{
 .personal img{
     /* width: 50%; */
     /* height: auto; */
+    width: 300px;
     display: block;
     margin: auto;
     padding: 2rem;
